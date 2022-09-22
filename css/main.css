@@ -24,7 +24,7 @@ img {
   width: 100%;
 }
 
-.main-nav ul {
+.main-nav ul{
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -36,8 +36,22 @@ img {
   flex: 1;
   text-align: center;
 }
-
-.main-nav ul li a {
+/*dawn*/
+a:focus{
+text-decoration:underline;
+outline: 4px solid black;
+}
+.skip{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: -3rem;
+  background-color: black;
+  color: white;
+  padding: .5rem 1rem;
+}
+/*up*/
+.main-nav ul li a{
   display: block;
   color: inherit;
   text-decoration: none;
@@ -58,7 +72,11 @@ form textarea {
   height: 150px;
   resize: none;
 }
-
+/*dawn*/
+form button:focus{
+  outline: 4px solid black;
+}
+/*up*/
 form button {
   background: none;
   border: 2px solid black;
